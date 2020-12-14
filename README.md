@@ -1,4 +1,5 @@
-# send prn to printer.bat
+# send prn to printer.bat - print directly .prn files
+
 ## [EN] 
 
 ### Instalation
