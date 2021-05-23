@@ -10,7 +10,7 @@ Sends dropped .prn file to printer. To get this work you only need share printer
 Zapisz skrypt gdzie potrzebujesz i upuść na niego plik .prn
 ### Opis
 Wysyła upuszczony plik .prn do drukarki. Do działania wymaga tylko udostępnienia drukarki przez internet i wypełnienie skryptu swoimi danymi - \\nazwa_komputera\\udostępniona_nazwa_drukarki. Jeżeli potrzebujesz debugowania (skrypt uruchamia się i znika) dopisz "PAUSE" w następnej linijce. Tym prostym sposobem sprawdzisz dlaczego skrypt nie działa.
-## ------------------------------------------------------------------------------------------------------------------------
+## --------------------------------------------------------------------------------------------
 ## Bookmark with input - run the page with your own part of the address
 
 ### Instalation
