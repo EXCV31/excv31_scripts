@@ -37,6 +37,8 @@ Skrypt w wersji "esc support" wymaga podania dwóch adresów - pierwszy działa 
 ## --------------------------------------------------------------------------------------------
 ## git.sh - "git commit -m" with regex - only for linux
 
+Big thanks to https://github.com/mlowczynski for help with bash :)
+
 ### Instalation
 Copy the contents of the script anywhere (eg Documents) and run command chmod +x <path to file>. Use your favorite (nano ofc ;) ) text editor to edit .bashrc and append alias to run script.
 
@@ -45,8 +47,9 @@ Example:
   Optionally edit a regex inside. Regex in repo works for pattern: `TASK#07312:`
 * Run command chmod +x /home/username/Documents/git.sh
 * Run command cd ~/ && nano .bashrc
-* Under "some more ls aliases" append : `alias 'gitcc'='/home/username/Documents/git.sh'`
-* Try it - go to folder you want to commit and type `gitcc "TASK:07312: Init commit"`
+* Under "some more ls aliases" append : `alias 'alias git='f(){ if [[ "$1" == "cc" ]]; then /home/username/Documents/git.sh "$2"; else git; fi }; f'`
+* Try it - go to folder you want to commit and type `git cc "TASK:07312: Init commit"`
+
 
 ### Description
 Script works as a `git commit -m "sample text"` but matches a regex that user wants.
