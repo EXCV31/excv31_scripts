@@ -34,3 +34,20 @@ demo.redmine.org/issues/xxxxxx
 Gdy naciśniesz zakładkę poprosi Cię ona o podanie numeru zadania w redmine, a następnie w miejsce "xxxxxx" wprowadzi ten numer i przeniesie Cię do żądanej strony.
 
 Skrypt w wersji "esc support" wymaga podania dwóch adresów - pierwszy działa jak wyżej, drugi zostanie wywołany gdy naciśniemy na zakładkę po czym wciśniemy "anuluj" lub "esc" w oknie przeglądarki.
+## --------------------------------------------------------------------------------------------
+## git.sh - "git commit -m" with regex - only for linux
+
+### Instalation
+Copy the contents of the script anywhere (eg Documents) and run command chmod +x <path to file>. Use your favorite (nano ofc ;) ) text editor to edit .bashrc and append alias to run script.
+
+Example:
+* Open Atom, paste contents of file and save inside /home/username/Documents as git.sh.
+  Optionally edit a regex inside. Regex in repo works for pattern: `TASK#07312:`
+* Run command chmod +x /home/username/Documents/git.sh
+* Run command cd ~/ && nano .bashrc
+* Under "some more ls aliases" append : `alias 'gitcc'='/home/username/Documents/git.sh'`
+* Try it - go to folder you want to commit and type `gitcc "TASK:07312: Init commit"`
+
+### Description
+Script works as a `git commit -m "sample text"` but matches a regex that user wants.
+  
