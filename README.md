@@ -47,7 +47,7 @@ Example:
   Optionally edit a regex inside. Regex in repo works for pattern: `TASK#07312:`
 * Run command chmod +x /home/username/Documents/git.sh
 * Run command cd ~/ && nano .bashrc
-* Under "some more ls aliases" append : `alias 'alias git='f(){ if [[ "$1" == "cc" ]]; then /home/username/Documents/git.sh "$2"; else git; fi }; f'`
+* Under "some more ls aliases" append : `alias git='f(){ if [[ "$1" == "cc" ]]; then /home/filip/Dokumenty/git.sh "$2"; else git $1 $2 $3 $4 $5 $6; fi }; f'`
 * Try it - go to folder you want to commit and type `git cc "TASK:07312: Init commit"`
 
 
